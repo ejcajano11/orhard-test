@@ -18,6 +18,10 @@ body {
     color: #F3F3F3;
 }
 
+.secondary-bg {
+    background-color: #272727;
+}
+
 .highlight-color {
     color: #CF1430;
 }
