@@ -1,0 +1,23 @@
+body {
+    height: 100vh;
+    background-color: #0E1414;
+    color: #FFFFFF;
+
+    font-family: "OpenSans-Soft-Light";
+}
+
+@font-face {
+    font-family: 'OpenSans-Soft-Light';
+    src: url('src/assets/OpenSans/OpenSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.secondary-color {
+    color: #F3F3F3;
+}
+
+.highlight-color {
+    color: #CF1430;
+}
