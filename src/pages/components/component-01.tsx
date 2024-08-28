@@ -34,14 +34,14 @@ export default function Component1() {
                             <img className="w-full h-full object-cover" src="src/assets/component-01/Image-01.jpg" alt="IfItDoesntMatchAnyMedia" />
                         </picture>
                     </div>
-                    <div className="row-span-1">
+                    <div className="row-span-1 cursor-pointer" onClick={() => onClickImg("src/assets/component-01/Image-02")}>
                         <picture>
                             <source media="(min-width: 900px)" srcSet="src/assets/component-01/Image-02@2x.jpg" />
                             <source media="(min-width: 640px)" srcSet="src/assets/component-01/Image-02.jpg" />
                             <img className="w-full h-full object-cover" src="src/assets/component-01/Image-02.jpg" alt="IfItDoesntMatchAnyMedia" />
                         </picture>
                     </div>
-                    <div className="row-span-1">
+                    <div className="row-span-1 cursor-pointer" onClick={() => onClickImg("src/assets/component-01/Image-03")}>
                         <picture>
                             <source media="(min-width: 900px)" srcSet="src/assets/component-01/Image-03@2x.jpg" />
                             <source media="(min-width: 640px)" srcSet="src/assets/component-01/Image-03.jpg" />
