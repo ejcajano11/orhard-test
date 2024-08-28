@@ -27,26 +27,31 @@ export default function Component1() {
                     md:grid-cols-3 md:grid-rows-2 md:grid-flow-col md:p-40
                     lg:grid-cols-3 lg:grid-rows-2 lg:grid-flow-col lg:p-60
                     ">
-                    <div className="row-span-2 cursor-pointer" onClick={() => onClickImg("src/assets/component-01/Image-01")}>
+
+                    <div className="relative group row-span-2 cursor-pointer" onClick={() => onClickImg("src/assets/component-01/Image-01")}>
                         <picture>
                             <source media="(min-width: 900px)" srcSet="src/assets/component-01/Image-01@2x.jpg" />
                             <source media="(min-width: 640px)" srcSet="src/assets/component-01/Image-01.jpg" />
                             <img className="w-full h-full object-cover" src="src/assets/component-01/Image-01.jpg" alt="IfItDoesntMatchAnyMedia" />
                         </picture>
+                        <span className="absolute bottom-0 left-0 w-full h-1 bg-red-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-100"></span>
                     </div>
-                    <div className="row-span-1 cursor-pointer" onClick={() => onClickImg("src/assets/component-01/Image-02")}>
+
+                    <div className="relative group  row-span-1 cursor-pointer" onClick={() => onClickImg("src/assets/component-01/Image-02")}>
                         <picture>
                             <source media="(min-width: 900px)" srcSet="src/assets/component-01/Image-02@2x.jpg" />
                             <source media="(min-width: 640px)" srcSet="src/assets/component-01/Image-02.jpg" />
                             <img className="w-full h-full object-cover" src="src/assets/component-01/Image-02.jpg" alt="IfItDoesntMatchAnyMedia" />
                         </picture>
+                        <span className="absolute bottom-0 left-0 w-full h-1 bg-red-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-100"></span>
                     </div>
-                    <div className="row-span-1 cursor-pointer" onClick={() => onClickImg("src/assets/component-01/Image-03")}>
+                    <div className="relative group  row-span-1 cursor-pointer" onClick={() => onClickImg("src/assets/component-01/Image-03")}>
                         <picture>
                             <source media="(min-width: 900px)" srcSet="src/assets/component-01/Image-03@2x.jpg" />
                             <source media="(min-width: 640px)" srcSet="src/assets/component-01/Image-03.jpg" />
                             <img className="w-full h-full object-cover" src="src/assets/component-01/Image-03.jpg" alt="IfItDoesntMatchAnyMedia" />
                         </picture>
+                        <span className="absolute bottom-0 left-0 w-full h-1 bg-red-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-100"></span>
                     </div>
                     <div className="row-span-2 sm:col-span-2">
                         <div className="text-2xl lg:text-3xl pb-3">

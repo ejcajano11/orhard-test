@@ -13,5 +13,17 @@ export const cards = [
        title: "Summer Lunch Menu By Mark Best",
        content: "AEG ambassador to help you make the most of the warmer weather and entertaining at home.",
        button: "READ MORE" 
-    }
+    },
+    {
+        imageSrc: "src/assets/component-02/Image-02",
+        title: "A Traditional Christmas Eve, Mark Best Style",
+        content: "One of Australia's best chefs abd AEG ambassador, Mark Best shares his favourite Christmas Eve menu which is sure to impress your guests.",
+        button: "READ MORE" 
+     },
+     {
+        imageSrc: "src/assets/component-02/Image-03",
+        title: "Taking Taste Further",
+        content: "=This exclusive cookbook gives you all the know-how you need. We've designed it to make sure you get the most out of our products - and the best out of you food.",
+        button: "READ MORE" 
+     }
 ]
