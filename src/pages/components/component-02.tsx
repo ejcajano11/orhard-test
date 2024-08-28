@@ -16,26 +16,27 @@ export default function Component2() {
                 ">
 
                 {cards.map( (card) => (
-                        <div className="row-span-1">
-
-                            <picture >
-                                <source media="(min-width: 900px)" srcSet={`${card.imageSrc}@2x.jpg`} />
-                                <source media="(min-width: 640px)" srcSet={`${card.imageSrc}.jpg`} />
-                                <img className="w-full h-full object-cover" src={`${card.imageSrc}.jpg`} alt="IfItDoesntMatchAnyMedia" />
-                            </picture>
+                        <div className="row-span-1 group">
+                            <div className="relative">
+                                <picture>
+                                    <source media="(min-width: 900px)" srcSet={`${card.imageSrc}@2x.jpg`} />
+                                    <source media="(min-width: 640px)" srcSet={`${card.imageSrc}.jpg`} />
+                                    <img className="w-full h-full object-cover" src={`${card.imageSrc}.jpg`} alt="IfItDoesntMatchAnyMedia" />
+                                </picture>
+                                <span className="absolute bottom-0 left-0 w-full h-1 bg-red-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-100"></span>
+                            </div>
                             
-                            <div className="text-xl lg:text-2xl font-semibold pt-4 pb-3">
+                            <p className="text-xl lg:text-2xl font-semibold pt-4 pb-3">
                                 {card.title}
-                            </div>
-
-                            <div className="text-sm lg:text-base">
+                            </p>
+                        
+                            <p className="text-sm lg:text-base">
                                 {card.content}
-                            </div>
-
-                            <div className="text-base lg:text-xl font-semibold pt-4">
+                            </p>
+                        
+                            <p className="text-base lg:text-xl font-semibold pt-4 group-hover:underline-offset-8 group-hover:underline group-hover:decoration-red-500">
                                 {card.button}
-                            </div>
-
+                            </p>
                         </div>
                     ) )
                 }
